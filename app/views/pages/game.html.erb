@@ -1,0 +1,23 @@
+<h1>********Welcome to the longest word-game !********</h1>
+
+<h2>= Here is your grid</h2>
+
+<h2><%= @grid %></h2>
+<p> ***************************************************** </p>
+
+<h2>What is your best shot?</h2>
+
+
+<form action="/score" method="get">
+  <label for="question">Enter your answer</label>
+  <input type="text" id="answer" name="response" placeholder="what is your suggestion?">
+  <input type="hidden" name="grid" value=<%= @grid %> >
+  <input type="submit" value="Ok, hmmm...!">
+
+</form>
+
+<p>*****************************************************</p>
+
+
+
+
